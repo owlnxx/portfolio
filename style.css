@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    color: white;
+
+}
+
+header {
+    height: 70px;
+    background-color: #18191a;
+}
+
+header h1 {
+    display: inline-block;
+    float: left;
+    padding: 16px 10px;
+    text-transform: uppercase;
+}
+
+header h1 a {
+    transition: 0.3s;
+}
+
+header h1 a:hover {
+    color: red;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a {
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: red;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(189, 188, 187, .9);
+    transition: .3s;
+    z-index: 9999;
+}
+
+.sidebar ul li a {
+    color: black;
+}
+
+.sidebar ul li {
+    padding: 24px;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+
+.sidebar ul li:hover {
+    background-color: red;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+.banner {
+    background-color: #242526;
+    padding: 150px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 70px;
+}
+
+.banner strong {
+    color: red;
+    font-size: 90px;
+    fon
+}
+
+.banner span {
+    color: white;
+    font-size: 70px;
+}
+
+.banner p {
+    font-size: 18px;
+    color: white;
+    font-size: 25px;
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+}
+
+.banner-left {
+    padding-left: 24px;
+}
+
+section h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+section h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: white;
+    left: calc(50% - 60px);
+}
+
+section h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 4px;
+    background-color: red;
+    left: calc(50% - 20px);
+}
+
+#about {
+    background-color: #242526;
+}
+
+#about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+#about container {
+    row-gap: 2rem;
+    text-align: center;
+}
+
+#about p {
+    text-align: center;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    color: whitesmoke;
+    font-size: 22px;
+    font-family: "Work Sans"
+}
+
+#skills {
+    background-color: #242526;
+
+}
+
+.html img {
+    width: 400px;
+    margin-left: auto;
+    margin-right: 10px;
+    display: block;
+    float: left;
+}
+
+.css img {
+    width: 290px;
+    margin-left: 100px;
+    margin-right: auto;
+    display: block;
+    float: left;
+}
+
+.javascript img {
+    width: 290px;
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-right: auto;
+    display: block;
+    float: left;
+}
+
+#projects {
+    background-color: #242526;
+}
+
+#projects p {
+    text-align: center;
+    font-size: 50px;
+}
+
+#contact {
+    background-color: #242526;
+}
+
+.col {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
+.col h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #b0b3b8;
+    padding: 30px;
+    text-align: center;
+}
+
+footer small {
+    color: black
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    #about img {
+        width: 350px;
+    }
+
+    header ul {
+        display: none;
+    }
+}
