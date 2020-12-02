@@ -201,9 +201,14 @@ section h3::after {
 
 }
 
+.skills container {
+    text-align: center;
+    display: inline-block;
+}
+
 .html img {
     width: 300px;
-    margin-left: 200px;
+    margin-left: 210px;
     margin-right: 10px;
     display: block;
     float: left;
