@@ -1,8 +1,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Ubuntu", sans-serif;
-    text-decoration: none;
+    font-family: Ubuntu", sans-serif;
+text-decoration: none;
     color: white;
 
 }
@@ -38,6 +38,7 @@ header ul li {
 
 header ul li a {
     transition: 0.3s;
+    font-family: "Castoro";
 }
 
 header ul li a:hover {
@@ -201,15 +202,15 @@ section h3::after {
 }
 
 .html img {
-    width: 400px;
-    margin-left: auto;
+    width: 300px;
+    margin-left: 210px;
     margin-right: 10px;
     display: block;
     float: left;
 }
 
 .css img {
-    width: 290px;
+    width: 190px;
     margin-left: 100px;
     margin-right: auto;
     display: block;
@@ -217,7 +218,7 @@ section h3::after {
 }
 
 .javascript img {
-    width: 290px;
+    width: 190px;
     margin-left: 120px;
     margin-top: 80px;
     margin-right: auto;
@@ -269,6 +270,15 @@ html {
 @media (max-width: 768px) {
     .mobile-menu {
         display: block;
+    }
+
+    #skills img {
+        vertical-align: middle;
+    }
+
+    .html img {
+        vertical-align: middle;
+        float: center;
     }
 
     #about img {
